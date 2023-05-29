@@ -1,0 +1,30 @@
+//Цвета
+$dark: #151515;
+$pink: #FDBCBC;
+$green: #A0B5AA;
+$beige: #EFE9D3;
+
+//Шрифты
+
+$latoFonts:(
+    Lato-Regular,
+
+    Lato-Light
+);
+@each $font in $latoFonts {
+    @font-face {
+        font-family: #{$font};
+        font-display: swap;
+        src: url('../../Assets/Fonts/#{$font}.ttf');
+    }
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("../../Assets/Fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Virilica";
+    src: url("../../Assets/Fonts/virilica.otf") format('opentype');
+}
