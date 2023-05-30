@@ -28,3 +28,11 @@ $latoFonts:(
     font-family: "Virilica";
     src: url("../../Assets/Fonts/virilica.otf") format('opentype');
 }
+
+//обнуление стилей кнопки
+%defaultButton {
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}

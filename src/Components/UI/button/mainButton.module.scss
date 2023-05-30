@@ -1,0 +1,22 @@
+@import "src/Components/UI/variables";
+
+.button {
+  @extend %defaultButton;
+
+  padding: 4px;
+
+  border: 1px solid $green;
+  border-radius: 8px;
+
+  color: $dark;
+  background: white;
+
+  &:hover {
+    @extend .dark
+  }
+}
+
+.dark {
+  color: white;
+  background: $green;
+}

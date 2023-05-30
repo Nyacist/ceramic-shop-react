@@ -1,0 +1,13 @@
+@import "src/Components/UI/variables";
+
+.counter {
+  border: 1px solid $green;
+  border-radius: 8px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button{
+  @extend %defaultButton;
+}
