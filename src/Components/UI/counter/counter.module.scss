@@ -4,10 +4,25 @@
   border: 1px solid $green;
   border-radius: 8px;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+  display: flex;
+  //grid-template-columns: 1fr 1fr 1fr;
 
-.button{
-  @extend %defaultButton;
+  font-size: 1em;
+
+  * {
+    padding: 0.4em 0.2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button{
+    @extend %defaultButton;
+  }
+
+  span{
+    border-left: 1px solid $green;
+    border-right: 1px solid $green;
+  }
 }

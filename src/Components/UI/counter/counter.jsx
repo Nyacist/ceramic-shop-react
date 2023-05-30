@@ -17,7 +17,7 @@ const Counter = () => {
     return (
         <div className={style.counter}>
             <button className={style.button} onClick={decrement}>-</button>
-            {count}
+            <span>{count}</span>
             <button className={style.button} onClick={increment}>+</button>
         </div>
     );
